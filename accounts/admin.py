@@ -20,6 +20,9 @@ class CustomUserAdmin(UserAdmin):
         ('Personal Details', {'fields': ('username', 'email', 'password', 'date_of_birth', 'pet_name',)}),
 
     )
+
+    # TODO: remove; just for testing
+    print(UserAdmin.fields)
     # add_fieldsets is not a standard ModelAdmin attribute. UserAdmin
     # overrides get_fieldsets to use this attribute when creating a user.
     add_fieldsets = (
